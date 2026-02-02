@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Form</title>
+</head>
+<body>
+
+<form>
+
+    <!-- BASIC INFO -->
+    <fieldset>
+        <legend>Basic Info</legend>
+
+        <label>Employee ID</label>
+        9
+        <input type="hidden" name="employee_id" value="9">
+        <br><br>
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="last_name" value="Dodsworth">
+        <br><br>
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="first_name" value="Anne">
+        <br><br>
+
+        <label>Gender</label><br>
+        <input type="radio" name="gender" value="male"> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="xxx"> XXX<br>
+        <input type="radio" name="gender" value="zzz"> ZZZ
+        <br><br>
+
+    </fieldset>
+
+    <!-- OPTIONAL INFO -->
+    <fieldset>
+        <legend>Optional Info</legend>
+
+        <label>Notes</label><br>
+        <textarea name="notes" rows="4" cols="40">
+Anne has a BA degree in English.
+She is fluent in French and German.
+        </textarea>
+        <br><br>
+
+        <label>Preferred Shift</label><br>
+        <input type="checkbox" name="shift" value="regular"> Regular<br>
+        <input type="checkbox" name="shift" value="gravy" checked> Gravy Yard
+        <br><br>
+
+        <label>Active?</label>
+        <input type="checkbox" name="active" checked>
+        <br><br>
+
+        <label>Are you human?</label>
+        <input type="text" name="captcha">
+        <br><br>
+
+    </fieldset>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Cancel</button>
+
+</form>
+
+</body>
+</html>

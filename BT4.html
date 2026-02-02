@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Form</title>
+</head>
+<body>
+
+<form>
+
+    <!-- BASIC INFO -->
+    <fieldset>
+        <legend>Basic Info</legend>
+
+        <label>Employee ID</label>
+        9
+        <input type="hidden" name="employee_id" value="9">
+        <br><br>
+
+        <label>Last Name</label>
+        <input type="text" name="last_name" value="Dodsworth" readonly>
+        <br><br>
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="first_name" value="Anne">
+        <br><br>
+
+        <label>Gender</label><br>
+        <input type="radio" id="g1" name="gender" value="male">
+        <label for="g1">Male</label><br>
+
+        <input type="radio" id="g2" name="gender" value="female">
+        <label for="g2">Female</label><br>
+
+        <input type="radio" id="g3" name="gender" value="xxx">
+        <label for="g3">XXX</label><br>
+
+        <input type="radio" id="g4" name="gender" value="zzz">
+        <label for="g4">ZZZ</label>
+        <br><br>
+
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" value="Sales Representative">
+        <br><br>
+
+        <label for="suffix">Suffix</label>
+        <input type="text" id="suffix" name="suffix" value="Ms.">
+        <br><br>
+
+        <label for="bdate">Birth Date</label>
+        <input type="datetime-local" id="bdate" name="birth_date" value="1969-07-02T00:00">
+        <br><br>
+
+        <label for="hdate">Hire Date</label>
+        <input type="datetime-local" id="hdate" name="hire_date" value="1994-11-15T00:00">
+        <br><br>
+
+        <label for="ssn">SSN # (if applicable)</label>
+        <input type="text" id="ssn" name="ssn">
+        <br><br>
+
+        <label for="reports">Reports To</label>
+        <select id="reports" name="reports_to">
+            <option value="buchanan">Buchanan</option>
+            <option value="ly">Ly</option>
+        </select>
+
+    </fieldset>
+
+    <!-- CONTACT INFO -->
+    <fieldset>
+        <legend>Contact Info</legend>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="name@example.com">
+        <br><br>
+
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" value="7 Houndstooth Rd.">
+        <br><br>
+
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" value="London">
+        <br><br>
+
+        <label for="region">Region</label>
+        <input type="text" id="region" name="region">
+        <br><br>
+
+        <label for="pc">Postal Code</label>
+        <input type="text" id="pc" name="postal_code" value="WG2 7LT">
+        <br><br>
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+            <option value="ru">Russian Federation</option>
+            <option value="vn">Vietnam</option>
+        </select>
+        <br><br>
+
+        <label for="phone">US Home Phone</label>
+        <input type="tel"
+               id="phone"
+               name="phone"
+               pattern="\([0-9]{3}\)[0-9]{3}-[0-9]{4}"
+               value="(234)234-2342">
+        <br><br>
+
+        <label for="photo">Photo</label>
+        <input type="file" id="photo" name="photo">
+
+    </fieldset>
+
+    <!-- OPTIONAL INFO -->
+    <fieldset>
+        <legend>Optional Info</legend>
+
+        <label for="notes">Notes</label><br>
+        <textarea id="notes" name="notes" rows="6" cols="60">
+Anne has a BA degree in English from St. Lawrence College.
+She is fluent in French and German. ZZZ
+        </textarea>
+        <br><br>
+
+        <label>Preferred Shift</label><br>
+
+        <input type="checkbox" id="regular" name="shift" value="regular">
+        <label for="regular">Regular</label><br>
+
+        <input type="checkbox" id="gravy" name="shift" value="gravy" checked>
+        <label for="gravy">Gravy Yard</label>
+        <br><br>
+
+        <label for="active">Active?</label>
+        <input type="checkbox" id="active" name="active" checked>
+        <br><br>
+
+        <label for="human">Are you human?</label><br>
+        TIDAWO &nbsp; Click to change<br>
+        <input type="text" id="human" name="human">
+
+    </fieldset>
+
+    <p>* required</p>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Cancel</button>
+
+</form>
+
+</body>
+</html>
