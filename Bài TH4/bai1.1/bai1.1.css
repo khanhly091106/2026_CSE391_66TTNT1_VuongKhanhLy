@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.wrapper {
+    width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Khung nhập liệu */
+.input-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    padding: 0;
+    border-radius: 5px;
+}
+
+.input-form input {
+    padding: 10px;
+    border: 2px solid #2e70d3;
+    border-radius: 4px;
+    outline: none;
+}
+
+.input-form input[type="text"] {
+    flex: 3;
+}
+
+.input-form input[type="number"] {
+    flex: 1;
+}
+
+.btn-add {
+    background-color: #137a52;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-add:hover {
+    background-color: #096743;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #dee2e6;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #1c67a0;
+    color: rgb(243, 239, 239);
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.btn-del {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.label-good {
+    color: green;
+    font-weight: bold;
+}
+
+.label-bad {
+    color: red;
+    font-weight: bold;
+}
+.btn-del:hover{
+    background-color: #72050a;
+}

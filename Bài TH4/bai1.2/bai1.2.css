@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.wrapper {
+    width: 800px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* khu vực tìm kiếm */
+.tools {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.tools input {
+    flex: 3;
+    padding: 10px;
+    border: 2px solid #2e70d3;
+    border-radius: 5px;
+}
+
+.tools select {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #2e70d3;
+    border-radius: 5px;
+}
+
+/* form thêm sinh viên */
+.input-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-form input {
+    padding: 10px;
+    border: 2px solid #2e70d3;
+    border-radius: 5px;
+}
+
+#name {
+    flex: 3;
+}
+
+#score {
+    flex: 1;
+}
+
+.btn-add {
+    background-color: #137a52;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-add:hover {
+    background-color: #096743;
+}
+
+/* bảng */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #dee2e6;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #1c67a0;
+    color: white;
+    cursor: pointer;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* nút xóa */
+.btn-del {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-del:hover {
+    background-color: #72050a;
+}
+
+/* xếp loại */
+.label-good {
+    color: green;
+    font-weight: bold;
+}
+
+.label-bad {
+    color: red;
+    font-weight: bold;
+}

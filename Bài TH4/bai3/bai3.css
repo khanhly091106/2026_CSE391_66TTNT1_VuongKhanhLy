@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    background: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* container form */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* tiêu đề */
+h2 {
+    margin-bottom: 20px;
+}
+
+/* form card */
+form {
+    background: white;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* input style */
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* focus input */
+input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* nút submit */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+/* thông báo lỗi */
+.error {
+    color: red;
+    font-size: 13px;
+    margin-top: 3px;
+}
+
+/* success */
+.success {
+    text-align: center;
+    font-size: 22px;
+    color: green;
+    margin-top: 20px;
+}
+
+/* password box */
+.password-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#togglePassword {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* thanh strength */
+.strength-bar {
+    height: 6px;
+    background: #ddd;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+#strength {
+    height: 6px;
+    width: 0%;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+/* text strength */
+#strength-text {
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+/* bộ đếm tên */
+#name-counter {
+    font-size: 12px;
+    text-align: right;
+    color: #555;
+}

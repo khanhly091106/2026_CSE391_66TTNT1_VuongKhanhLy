@@ -3,12 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Giao Diện Quản Lý Điểm</title>
-    <link rel="stylesheet" href="bai1.1.css">
+    <link rel="stylesheet" href="bai1.2.css">
+</head>
+
 <body>
 
     <div class="wrapper">
         <h2>QUAN LY DIEM SINH VIEN</h2>
 
+        <!-- TÌM KIẾM + LỌC -->
+        <div class="tools">
+            <input 
+                type="text" 
+                id="search" 
+                placeholder="Tìm kiếm sinh viên..."
+            >
+
+            <select id="filter">
+                <option value="all">Tất cả</option>
+                <option value="Giỏi">Giỏi</option>
+                <option value="Khá">Khá</option>
+                <option value="Trung bình">Trung bình</option>
+                <option value="Yếu">Yếu</option>
+            </select>
+        </div>
+
+        <!-- FORM THÊM -->
         <div class="input-form">
             <input type="text" placeholder="Nhập họ tên..." id="name">
             <input type="number" placeholder="Điểm (0-10)" id="score" min="0" max="10">
@@ -20,11 +40,12 @@
                 <tr>
                     <th>STT</th>
                     <th>Họ tên</th>
-                    <th>Điểm</th>
+                    <th id="score-header">Điểm ▲</th>
                     <th>Xếp loại</th>
                     <th>Thao tác</th>
                 </tr>
             </thead>
+
             <tbody>
                 <tr>
                     <td>1</td>
@@ -33,6 +54,7 @@
                     <td class="label-good">Giỏi</td>
                     <td><button class="btn-del">Xóa</button></td>
                 </tr>
+
                 <tr>
                     <td>2</td>
                     <td>Trần Thị B</td>
@@ -42,7 +64,10 @@
                 </tr>
             </tbody>
         </table>
+
     </div>
-<script src="bai1.1.js"></script>
+
+<script src="bai1.2.js"></script>
+
 </body>
 </html>
