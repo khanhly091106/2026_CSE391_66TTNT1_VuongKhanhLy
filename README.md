@@ -1,7 +1,8 @@
 # 👋 Giới thiệu bản thân
 
 ## 📌 Thông tin sinh viên
-- **Họ và tên:** Vương Khánh Ly  
+- **Họ và tên:** Vương Khánh Ly
+- **Mã sinh viên:** 2451261025
 - **Lớp:** 66TTNT1  
 - **Trường:** Đại học Thủy Lợi  
 - **Môn học:** Nền tảng Lập trình Web (CSE391)
